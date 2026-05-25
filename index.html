@@ -1,0 +1,3255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0K2JZFDWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K0K2JZFDWZ');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j
+  ,f);
+  })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>M.A. in India Studies – O.P. Jindal Global University</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ================================================
+       RESET & BASE
+    ================================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+    }
+
+    .section-global {
+      width: 100%;
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    /* ================================================
+       HEADER
+    ================================================ */
+    .header-section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      border-bottom: none;
+      padding: 24px 0 10px;
+      z-index: 100;
+    }
+
+    /* Align the logos to the same left edge as the hero text (hero-inner padding-left). */
+    .header-section .container {
+      max-width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .header-logo-img {
+      height: 88px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .header-logo-divider {
+      width: 1px;
+      height: 68px;
+      background: #ddd;
+      margin: 0 22px;
+      flex-shrink: 0;
+    }
+
+    .logo-flex-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .logo-flex-container {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .header-section {
+        position: relative;
+        background: #fff;
+        padding: 14px 0;
+      }
+
+      .header-logo-img {
+        height: 60px;
+      }
+
+      .header-logo-divider {
+        height: 48px;
+        margin: 0 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-logo-img {
+        height: 48px;
+      }
+
+      .header-logo-divider {
+        margin: 0 10px;
+        height: 40px;
+      }
+    }
+
+    /* ================================================
+       HERO SECTION
+    ================================================ */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+      padding-top: 110px;
+      /* Space for the floating absolute header */
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding-top: 0;
+      }
+    }
+
+    /* Student image — a real element so it can sit higher than the text
+       (head above the title), shifted left of centre, and rest just above
+       the info bar. Height exceeds the row so the head rises above the title
+       regardless of how tall the form makes the row. */
+    .hero-student {
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      transform: translateX(-50%);
+      height: calc(100% + 56px);
+      width: auto;
+      max-width: none;
+      z-index: 1;
+      pointer-events: none;
+      object-fit: contain;
+      object-position: bottom center;
+    }
+
+    .hero-section::after {
+      display: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 3;
+      /* Elevated above the ::after overlay (z-index 2) to maintain full interactability */
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      min-height: 460px;
+      padding: 40px 60px 48px;
+      gap: 28px;
+    }
+
+    .hero-text-col {
+      position: relative;
+      z-index: 2;
+      flex: 0 0 40%;
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-form-col {
+      flex: 0 0 32%;
+      max-width: 32%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Hero text */
+    .hero-pretitle {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(16px, 1.8vw, 22px);
+      font-weight: 400;
+      font-style: normal;
+      color: #1e1e1e;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .hero-ma {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(34px, 3.4vw, 65px);
+      font-weight: 800;
+      color: #000000;
+      line-height: 1.08;
+      margin-bottom: 0px;
+      letter-spacing: 0;
+    }
+
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(34px, 3.4vw, 65px);
+      font-weight: 800;
+      line-height: 1.08;
+      margin-bottom: 14px;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    /* Thin rule under the heading, as in the Figma design */
+    .hero-divider {
+      width: 100%;
+      max-width: 380px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.18);
+      margin: 0 0 18px;
+    }
+
+    .text-navy {
+      color: #0b1354;
+    }
+
+    .text-gradient-studies {
+      background: linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-tagline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: clamp(18px, 1.56vw, 30px);
+      font-weight: 500;
+      color: #000000;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .wavy-underline {
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #6a0dad;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+    }
+
+    /* Outline button: gradient border only, transparent interior (matches Figma).
+       !important is required because NoPaperForms injects its own
+       .npfWidgetButton style (solid #4c79dc fill) after our CSS loads. */
+    .btn-cta {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(90deg, #0D1B73 0%, #6A0DAD 50%, #00C2CB 100%) border-box !important;
+      color: #6A0DAD !important;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 16px 46px !important;
+      border: 3px solid transparent !important;
+      border-radius: 20px !important;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      align-self: flex-start;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(74, 0, 224, 0.18);
+      color: #00B4D8 !important;
+    }
+
+    /* Enquire Hero Card */
+    .enquire-hero-card {
+      background: linear-gradient(135deg, #0b1354 0%, #581c87 60%, #0093b7 100%);
+      border-radius: 24px;
+      padding: 26px 26px 24px;
+      box-shadow: 0 12px 40px rgba(11, 19, 84, 0.4);
+      width: 100%;
+    }
+
+    .enquire-hero-title {
+      font-size: clamp(20px, 2.2vw, 24px);
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero-form-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 13px 16px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      margin-bottom: 16px;
+      outline: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .hero-form-input:focus {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-form-input::placeholder {
+      color: rgba(255, 255, 255, 0.65);
+      font-style: italic;
+    }
+
+    .hero-form-input option {
+      color: #333;
+      background: #fff;
+    }
+
+    .hero-phone-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .hero-phone-prefix {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 13px 16px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-phone-input {
+      margin-bottom: 0;
+      flex: 1;
+    }
+
+    .hero-consent {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .hero-consent input[type="checkbox"] {
+      margin-top: 3px;
+      flex-shrink: 0;
+      accent-color: #ffd700;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+    }
+
+    .hero-submit-btn {
+      width: 100%;
+      background: linear-gradient(180deg, #ffe342 0%, #ffd700 100%);
+      color: #0b1354;
+      border: none;
+      border-radius: 8px;
+      padding: 15px;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all 0.2s;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .hero-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+      background: linear-gradient(180deg, #ffeb60 0%, #ffe033 100%);
+    }
+
+    /* Info Bar */
+    .hero-info-bar {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      margin-top: 28px;
+      /* Nudges the course-details bar a little lower */
+      margin-bottom: 45px;
+      /* Adds space below the info bar before next section */
+    }
+
+    .info-tile {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 36px 10px;
+      /* Increased vertical padding to add height/spaciousness */
+      color: #fff;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .info-tile:last-child {
+      border-right: none;
+    }
+
+    .info-tile-label {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.15;
+      opacity: 0.85;
+      letter-spacing: 0.3px;
+    }
+
+    .info-tile-value {
+      font-size: 27px;
+      font-weight: 800;
+      margin-top: 1px;
+      line-height: 1.15;
+      letter-spacing: 0.2px;
+    }
+
+    /* ================================================
+       WHO SHOULD APPLY
+    ================================================ */
+    .who-section {
+      padding: 70px 0 30px;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .who-title {
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .who-card {
+      background: #0D1B73;
+      border-radius: 20px;
+      padding: 26px 14px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      color: #fff;
+    }
+
+    .who-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(106, 13, 173, 0.2);
+    }
+
+    .who-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .who-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .who-card h6 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #A8B4FF;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    /* ================================================
+       ABOUT THE PROGRAMME
+    ================================================ */
+    .about-programme-section {
+      padding: 70px 0 80px;
+      background: #FFFDF0;
+      /* Solid soft premium ivory background */
+    }
+
+    .about-prog-title {
+      font-size: clamp(34px, 4.4vw, 48px);
+      font-weight: 800;
+      color: #0d1b73;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }
+
+    .about-prog-title em {
+      color: #6a0dad;
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    .about-prog-body {
+      font-size: 17px;
+      color: #4b5563;
+      /* Clean professional grey */
+      line-height: 1.9;
+      margin-bottom: 24px;
+      font-weight: 500;
+      /* Solid and beautiful typography */
+    }
+
+    .about-prog-body strong {
+      color: #0d1b73;
+      /* Rich dark navy blue for high-contrast branding */
+      font-weight: 700;
+    }
+
+    .about-prog-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      /* Modern elegant spacing gap */
+    }
+
+    .about-images-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-prog-images .img-campus {
+      width: 100%;
+      height: 376px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .about-prog-images .img-campus:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-prog-images .img-collage {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .about-prog-images .img-collage:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-prog-cta-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #1A0D6B 0%, #00B4D8 100%);
+      padding: 22px 24px;
+      border-radius: 20px;
+      color: #ffffff;
+      text-decoration: none;
+      height: 124px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(11, 19, 84, 0.25);
+      position: relative;
+    }
+
+    .about-prog-cta-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 180, 200, 0.4);
+      color: #ffffff;
+    }
+
+    .cta-tile-text {
+      font-size: clamp(16px, 1.5vw, 18px);
+      font-weight: 700;
+      line-height: 1.35;
+      color: #ffffff;
+    }
+
+    .cta-tile-arrow {
+      align-self: flex-end;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #ffffff;
+      margin-top: auto;
+    }
+
+    /* ================================================
+       PROGRAMME HIGHLIGHTS
+    ================================================ */
+    .features-section {
+      background: url('Assets/Assets/Programme Highlights/bg picture.png') center center / cover no-repeat;
+      padding: 80px 0 90px;
+      /* Increased vertical padding to make height taller, giving more space for cards */
+      border-radius: 36px 36px 0 0;
+      overflow: hidden;
+      position: relative;
+      margin-top: 0;
+      /* Removed negative margin overlap to keep the space below the info bar */
+      z-index: 2;
+    }
+
+    .features-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+          rgba(48, 0, 110, 0.50) 0%,
+          rgba(140, 0, 170, 0.42) 30%,
+          rgba(80, 0, 160, 0.38) 55%,
+          rgba(0, 180, 200, 0.42) 80%,
+          rgba(0, 140, 180, 0.50) 100%);
+    }
+
+    .features-section>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title1 {
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+      letter-spacing: 0.5px;
+      margin-bottom: 32px !important;
+    }
+
+    .slider-container {
+      position: relative;
+    }
+
+    .slider-wrapper {
+      overflow: hidden;
+      margin: 0 48px;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      flex: 1;
+      /* Stretch to occupy full height of slider track */
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      /* Clean border to maintain card boundaries */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      /* Softer premium shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-img {
+      width: 105.5% !important;
+      /* Slightly wider to push and crop out the built-in Figma shadow/whitespace on the right */
+      max-width: none !important;
+      /* Override default bootstrap max-width: 100% constraint */
+      aspect-ratio: 1.35 / 1;
+      object-fit: cover;
+      object-position: left top;
+      /* Pin alignment to top-left to preserve perfect left-edge and top-edge curves */
+      display: block;
+    }
+
+    .card-overlay {
+      width: 100%;
+      flex: 1;
+      /* Fill the remaining card height dynamically */
+      background: #fff;
+      padding: 14px 18px 18px;
+      /* Tighter padding to pull text and picture closer together */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #0d1b73;
+      line-height: 1.3;
+    }
+
+    .card-text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 42%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 10;
+      color: #0d1b73;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      transition: background 0.2s, transform 0.2s;
+      font-weight: 700;
+    }
+
+    .left-btn {
+      left: 4px;
+    }
+
+    .right-btn {
+      right: 4px;
+    }
+
+    .slider-btn:hover {
+      background: #fff;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    /* ================================================
+       RECOGNITIONS
+    ================================================ */
+    .recognitions-section {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .recognitions-header {
+      background: #ffffff;
+      /* Reduced bottom padding so bg image starts immediately after header */
+      padding: 50px 20px 40px;
+      text-align: center;
+    }
+
+    .recognitions-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #0d1b73;
+      margin: 0;
+    }
+
+    .recognitions-inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 0 0px;
+    }
+
+    .recognitions-badges {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1700px;
+      margin: 0 auto;
+    }
+
+    .recognitions-body {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 780px;
+      background: url('Assets/Assets/Recognitions/bg picture.png') bottom center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    .recognitions-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(13, 27, 115, 0.6);
+      opacity: 0;
+    }
+
+    .rec-badge {
+      flex: 0 0 18%;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: linear-gradient(180deg, #6A0DAD 0%, #0d1b73 100%);
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      border: 3px solid #fff !important;
+    }
+
+    .rec-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .rec-badge-large {
+      flex: 0 0 18%;
+    }
+
+    .rec-badge-center {
+      flex: 0 0 22%;
+      padding: 6px;
+      transform: scale(1.1);
+      margin: 0;
+      z-index: 10;
+    }
+
+    .rec-badge-center~.rec-badge-large {
+      flex: 0 0 18%;
+    }
+
+    .rec-badge-center~.rec-badge {
+      flex: 0 0 18%;
+    }
+
+    /* When inside mobile carousel */
+    .owl-carousel .rec-badge,
+    .owl-carousel .rec-badge-large,
+    .owl-carousel .rec-badge-center {
+      flex: none !important;
+      max-width: 90% !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      transform: none !important;
+      padding: 10px !important;
+    }
+
+    /* ================================================
+       FACULTY
+    ================================================ */
+    .faculty-section {
+      background: linear-gradient(93deg, #ffffff 3%, #fffcde 100%);
+      padding: 70px 0;
+    }
+
+    .faculty-main-title {
+      font-size: clamp(32px, 4.6vw, 52px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 10px;
+    }
+
+    .faculty-subtitle {
+      font-size: 15.5px;
+      color: #444;
+      max-width: 680px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .faculty-carousel-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .faculty-grid-wrapper {
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .faculty-grid {
+      display: flex;
+      gap: 22px;
+      transition: transform 0.4s ease;
+    }
+
+    .faculty-card {
+      flex: 0 0 calc(25% - 16.5px);
+      min-width: 0;
+      text-align: center;
+    }
+
+    .faculty-image {
+      width: 100%;
+      max-width: 230px;
+      aspect-ratio: 1 / 1;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 0 auto 14px;
+      border: 3px solid #fff;
+      background: #6a0dad;
+      box-shadow: inset 4px 6px 4px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(106, 13, 173, 0.2);
+      position: relative;
+    }
+
+    .faculty-image::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 2px dashed rgba(255, 255, 255, 0.6);
+      border-radius: 18px;
+      pointer-events: none;
+    }
+
+    .faculty-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .faculty-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6a0dad;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .faculty-title-text {
+      font-size: 12.5px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .faculty-nav-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 2px solid #6a0dad;
+      background: transparent;
+      color: #6a0dad;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .faculty-nav-btn:hover {
+      background: #6a0dad;
+      color: #fff;
+    }
+
+    /* ================================================
+       CASE STUDIES
+    ================================================ */
+    .case-studies-section {
+      padding: 70px 0;
+      background: #fafafa;
+    }
+
+    .case-studies-title {
+      font-size: clamp(24px, 4vw, 38px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* ================================================
+       CASE STUDIES
+    ================================================ */
+    .case-studies-section {
+      padding: 80px 0;
+      background: #FFFDF0;
+      /* Solid soft premium ivory background */
+    }
+
+    .case-studies-section .container {
+      max-width: 1200px;
+      /* Constrain max-width to match Figma compact grid */
+    }
+
+    .case-studies-title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      color: #0d1b73;
+      text-align: center;
+      margin-bottom: 16px;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .case-studies-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 4px;
+      background: #0d1b73;
+      /* Solid navy blue underline */
+      border-radius: 2px;
+    }
+
+    .case-sub {
+      text-align: center;
+      font-size: 15px;
+      color: #4b5563;
+      max-width: 640px;
+      margin: 0 auto 50px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .case-card {
+      background: #fff;
+      border-radius: 24px;
+      /* Premium smooth corners */
+      padding: 20px;
+      /* Soft padding surrounding elements */
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+      /* Increased robust box shadow */
+      display: flex;
+      flex-direction: row-reverse;
+      /* Image on right, text on left as in Figma */
+      gap: 24px;
+      /* Space between image and text content */
+      height: 100%;
+      min-height: 240px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .case-card:hover {
+      transform: translateY(-6px);
+      /* High-end micro-interaction hover */
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16);
+      /* Dynamic deeper shadow */
+    }
+
+    .case-card-img {
+      flex: 0 0 38%;
+      max-width: 38%;
+      aspect-ratio: 3 / 4;
+      /* Enforce a beautiful tall vertical portrait format as in Figma */
+      border-radius: 18px;
+      /* Elegant rounded image frame */
+      overflow: hidden;
+    }
+
+    .case-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .case-body {
+      flex: 1;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-card-title {
+      font-size: clamp(16px, 1.8vw, 19px);
+      font-weight: 800;
+      /* Extra bold text */
+      color: #0d1b73;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .case-excerpt {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .btn-read {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #00B4D8;
+      /* Vibrant cyan/teal button color */
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 40px;
+      /* Premium pill shape */
+      width: fit-content;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 180, 216, 0.2);
+    }
+
+    .btn-read:hover {
+      background: #0077B6;
+      /* Deep blue-cyan on hover */
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0, 180, 216, 0.4);
+    }
+
+    /* Helper utility classes for custom heading colors */
+    .text-purple {
+      color: #6a0dad !important;
+    }
+
+    .text-cyan {
+      color: #00b4d8 !important;
+    }
+
+    /* ================================================
+       ELIGIBILITY TABS
+    ================================================ */
+    .eligibility-section {
+      position: relative;
+      padding: 80px 0;
+      overflow: hidden;
+      background: #0d1b73;
+    }
+
+    .elig-bg {
+      position: absolute !important;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0 !important;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    .bg-eligibility .elig-bg {
+      background-image: url('Assets/Assets/eligibility/bg picture (14).png');
+    }
+
+    .bg-fees .elig-bg {
+      background-image: url('Assets/Assets/fees & financing/bg picture (15).png');
+    }
+
+    .bg-payment .elig-bg {
+      background-image: url('Assets/Assets/flexible payment/bg picture (16).png');
+    }
+
+    .elig-overlay {
+      position: absolute !important;
+      inset: 0;
+      z-index: 1 !important;
+      background: linear-gradient(135deg, rgba(13, 27, 115, 0.82) 0%, rgba(106, 13, 173, 0.78) 50%, rgba(0, 194, 203, 0.72) 100%);
+    }
+
+    .eligibility-section>* {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Bootstrap nav-tabs override */
+    .elig-tabs {
+      border-bottom: none !important;
+      border-radius: 100px;
+      padding: 6px !important;
+      border: 1px solid rgba(255, 255, 255, 0.4) !important;
+      background: linear-gradient(90deg, #00C2CB 0%, #6A0DAD 50%, #0D1B73 100%) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex !important;
+      width: max-content;
+      max-width: 100%;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 50px !important;
+      padding-left: 6px !important;
+      padding-right: 6px !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .elig-tabs .nav-item {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .elig-tabs .nav-link {
+      color: rgba(255, 255, 255, 0.85) !important;
+      font-weight: 600;
+      font-size: 16.5px;
+      border-radius: 100px !important;
+      border: none !important;
+      padding: 16px 40px !important;
+      background: transparent !important;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .elig-tabs .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    .elig-tabs .nav-link.active {
+      background: #ffffff !important;
+      color: #0d1b73 !important;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .elig-tab-inner {
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      box-shadow: none !important;
+    }
+
+    .elig-section-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff !important;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .elig-section-title.sec-2 {
+      margin-top: 36px;
+    }
+
+    .elig-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
+    .elig-list li {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: #ffffff !important;
+      font-size: 15px;
+      line-height: 1.85;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    /* Nested numbered list must stack BELOW its parent line, not beside it */
+    .elig-list .nested-gold-list {
+      flex-basis: 100%;
+      width: 100%;
+    }
+
+    .elig-list li::before {
+      content: '➤';
+      color: #ffffff !important;
+      font-size: 15px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .nested-gold-list {
+      list-style: none;
+      padding-left: 28px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .nested-gold-list li {
+      display: flex;
+      gap: 8px;
+      color: #FFD700 !important;
+      font-size: 14.5px;
+      line-height: 1.8;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .nested-gold-list li::before {
+      content: none !important;
+    }
+
+    .fee-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      overflow: hidden;
+      margin-top: 28px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .fee-table th {
+      background: rgba(13, 27, 115, 0.4);
+      color: #FFD700 !important;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .fee-table th:last-child {
+      border-right: none;
+    }
+
+    .fee-table td {
+      color: #ffffff !important;
+      font-size: 14.5px;
+      font-weight: 500;
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .fee-table td:last-child {
+      border-right: none;
+    }
+
+    .fee-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fee-table tr:nth-child(even) td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    @media (max-width: 767.98px) {
+      .elig-tabs {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        border-radius: 20px !important;
+        padding: 10px !important;
+        gap: 8px !important;
+        background: linear-gradient(180deg, #00C2CB 0%, #6A0DAD 50%, #0D1B73 100%) !important;
+      }
+
+      .elig-tabs .nav-link {
+        width: 100% !important;
+        padding: 10px 20px !important;
+        border-radius: 12px !important;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .elig-tab-inner {
+        padding: 30px 24px !important;
+      }
+    }
+
+    /* ================================================
+       TESTIMONIALS / STUDENT COMMUNITY
+    ================================================ */
+    .testimonials-section {
+      padding: 60px 0;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .sc-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .sc-left-col {
+      flex: 0 0 300px;
+      width: 300px;
+      padding-top: 10px;
+    }
+
+    .test-main-title {
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 900;
+      color: #0b1354;
+      line-height: 1.1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      letter-spacing: -1px;
+    }
+
+    .test-main-title span {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0;
+      white-space: nowrap;
+    }
+
+    /* Student Community heading accents — matched to the Figma design */
+    .test-main-title .text-purple {
+      color: #2a157e !important;
+    }
+
+    .test-main-title .text-cyan {
+      background: linear-gradient(90deg, #d6249f 0%, #6a0dad 45%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent !important;
+    }
+
+    .test-subtitle {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: clamp(14px, 1.4vw, 17px);
+      color: #2b3783;
+      line-height: 1.5;
+      margin-top: 24px;
+      font-weight: 400;
+    }
+
+    .sc-right-col {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+    }
+
+    .sc-slider-wrap {
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .test-grid {
+      display: flex;
+      gap: 20px;
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .test-card {
+      position: relative;
+      flex: 0 0 360px;
+      width: 360px;
+      height: 530px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px 20px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .test-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+    }
+
+    .test-card.featured {
+      border: 2px solid #00c2cb;
+      box-shadow: 0 20px 48px rgba(0, 194, 203, 0.12);
+    }
+
+    .test-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #00C2CB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px auto;
+      box-shadow: 0 6px 16px rgba(0, 194, 203, 0.2);
+      flex-shrink: 0;
+    }
+
+    .avatar-svg {
+      width: 30px;
+      height: 30px;
+      color: #ffffff;
+      stroke-width: 1.5;
+    }
+
+    .test-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0b1354;
+      text-align: center;
+      margin-bottom: 4px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .test-role {
+      font-size: 12px;
+      font-weight: 600;
+      color: #00C2CB;
+      text-align: center;
+      margin-bottom: 12px;
+      font-style: italic;
+      line-height: 1.4;
+      font-family: 'Montserrat', sans-serif;
+      min-height: auto;
+    }
+
+    .test-text {
+      font-size: 11px;
+      color: #444444;
+      line-height: 1.45;
+      font-weight: 500;
+      text-align: left;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      flex-grow: 1;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .test-text::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .test-text::-webkit-scrollbar-thumb {
+      background: rgba(0, 194, 203, 0.2);
+      border-radius: 4px;
+    }
+
+    .sc-nav-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 1199.98px) {
+      .sc-layout {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .sc-left-col {
+        width: 100%;
+        flex: none;
+        padding-top: 0;
+      }
+
+      .test-main-title {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .test-main-title span {
+        padding-bottom: 0;
+      }
+
+      .test-subtitle {
+        margin-top: 12px;
+      }
+
+      .test-card {
+        flex: 0 0 310px;
+        width: 310px;
+        height: 500px;
+        padding: 20px 16px;
+      }
+
+      .test-name {
+        font-size: 17px;
+      }
+
+      .test-role {
+        font-size: 11.5px;
+        margin-bottom: 12px;
+        min-height: auto;
+      }
+
+      .test-text {
+        font-size: 10.5px;
+        line-height: 1.4;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .test-main-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .test-card {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 480px;
+        padding: 24px 20px;
+      }
+
+      .test-avatar {
+        width: 68px;
+        height: 68px;
+      }
+
+      .avatar-svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+
+    /* ================================================
+       VIDEO SECTION
+    ================================================ */
+    .video-section {
+      padding: 50px 0;
+    }
+
+    .video-box {
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+      display: block;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .video-bg {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 40px;
+    }
+
+    .video-border {
+      position: absolute;
+      inset: 12px;
+      border: 3px dashed rgba(255, 255, 255, 0.7);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      width: 76px;
+      height: 76px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #6a0dad;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .video-box:hover .play-btn {
+      transform: translate(-50%, -60%) scale(1.1);
+    }
+
+    .video-text {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.96);
+      color: #0d1b73;
+      padding: 10px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ================================================
+       JII (ABOUT)
+     ================================================ */
+    .jii-section {
+      position: relative;
+      width: 100%;
+      background: url('Assets/Assets/Jindal India Institute/bg frame (3).png') center/cover no-repeat;
+      padding: 60px 0 !important;
+      overflow: hidden;
+    }
+
+    .jii-overlay-col {
+      position: relative;
+      background: linear-gradient(135deg, rgba(13, 27, 115, 0.98) 0%, rgba(106, 13, 173, 0.96) 55%, rgba(11, 19, 84, 0.98) 100%);
+      padding: 80px 45px !important;
+      border-radius: 28px;
+      z-index: 2;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .jii-title {
+      font-size: clamp(32px, 4.5vw, 44px);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .jii-body {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    .jii-body p+p {
+      margin-top: 14px;
+    }
+
+    .jii-body strong,
+    .jii-body b {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 991.98px) {
+      .jii-section {
+        padding: 40px 0 !important;
+      }
+
+      .jii-overlay-col {
+        padding: 50px 24px !important;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        margin: 0 10px;
+      }
+    }
+
+    /* ================================================
+       FAQ
+    ================================================ */
+    .faq-section {
+      padding: 70px 0;
+      background: linear-gradient(180deg, #FFFFF2 0%, #F0F8FF 100%);
+    }
+
+    .faq-main-title {
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 40px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid rgba(13, 27, 115, 0.12) !important;
+      border-radius: 18px !important;
+      margin-bottom: 14px;
+      box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .faq-item .accordion-button {
+      background: #fff;
+      color: #6a0dad;
+      font-weight: 600;
+      font-size: 15px;
+      border-radius: 18px !important;
+      padding: 18px 22px;
+      box-shadow: none;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .faq-item .accordion-button:not(.collapsed) {
+      background: #fff;
+      color: #6a0dad;
+      box-shadow: none;
+    }
+
+    .faq-item .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236a0dad'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+
+    .accordion-body {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.7;
+      padding: 0 22px 18px;
+    }
+
+    /* ================================================
+       ENQUIRE NOW
+    ================================================ */
+    .enquire-section {
+      padding: 70px 0;
+      background: linear-gradient(93deg, #fff 3%, #fffcde 100%);
+    }
+
+    .enquire-section-title {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      color: #0d1b73;
+      margin-bottom: 40px;
+    }
+
+    .enquire-form-container {
+      background: linear-gradient(135deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      border-radius: 40px;
+      overflow: hidden;
+      max-width: 980px;
+      margin: 0 auto;
+      box-shadow: 0 12px 40px rgba(13, 27, 115, 0.3);
+    }
+
+    .enquire-form-left {
+      padding: 40px 44px;
+    }
+
+    .enquire-form-right {
+      padding: 40px 44px;
+      background: rgba(0, 0, 0, 0.12);
+    }
+
+    .glass-input {
+      background: rgba(255, 255, 255, 0.14) !important;
+      border: none !important;
+      border-radius: 12px !important;
+      color: #fff !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px !important;
+      padding: 12px 16px !important;
+      margin-bottom: 12px;
+      width: 100%;
+      outline: none;
+    }
+
+    .glass-input::placeholder {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-style: italic;
+    }
+
+    .glass-input option {
+      color: #333;
+      background: #fff;
+    }
+
+    .glass-input:focus {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .glass-input-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 0;
+    }
+
+    .glass-input-row .glass-prefix {
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .glass-input-row .glass-input {
+      margin-bottom: 0;
+    }
+
+    .privacy-notice {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+
+    #enq-consent {
+      accent-color: #ffe500;
+    }
+
+    .btn-submit-yellow {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 55%, #00c2cb 100%);
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      padding: 14px;
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      transition: all 0.2s;
+      margin-top: 6px;
+    }
+
+    .btn-submit-yellow:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .enquire-info-title {
+      font-size: clamp(20px, 2.5vw, 28px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+
+    .enquire-info-sub {
+      font-size: 15px;
+      color: #ffe500;
+      line-height: 1.7;
+    }
+
+    /* ================================================
+       FOOTER
+    ================================================ */
+    footer {
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      padding: 22px;
+    }
+
+    footer p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* ================================================
+       RESPONSIVE
+    ================================================ */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        padding: 28px 28px 28px;
+      }
+
+      .header-section .container {
+        padding-left: 28px;
+        padding-right: 28px;
+      }
+
+      .hero-text-col {
+        flex: 0 0 52%;
+        max-width: 52%;
+      }
+
+      .hero-form-col {
+        flex: 0 0 46%;
+        max-width: 46%;
+      }
+
+      /* No room for the centered student image at tablet widths —
+         fade it into the background behind the form instead of overlapping text. */
+      .hero-student {
+        left: auto;
+        right: 0;
+        transform: none;
+        height: 100%;
+        opacity: 0.16;
+      }
+
+      .faculty-card {
+        flex: 0 0 calc(33.33% - 16px);
+      }
+
+      .test-card {
+        flex: 0 0 calc(50% - 9px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        flex-direction: column;
+        padding: 24px 20px 40px;
+        min-height: auto;
+        text-align: center;
+      }
+
+      .hero-text-col,
+      .hero-form-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .hero-title {
+        white-space: normal;
+      }
+
+      .hero-divider {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-student {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        height: 70%;
+        opacity: 0.12;
+      }
+
+      .header-section .container {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .hero-section::after {
+        background: rgba(255, 255, 255, 0.70);
+      }
+
+      .hero-pretitle {
+        font-size: 14px;
+      }
+
+      .info-tile-label {
+        font-size: 9px;
+      }
+
+      .info-tile-value {
+        font-size: 12px;
+      }
+
+      .info-tile {
+        padding: 18px 6px;
+      }
+
+      /* Increased vertical padding on mobile for spacing */
+
+      .features-section {
+        border-radius: 24px 24px 0 0;
+        padding: 50px 0 54px;
+        margin-top: 0;
+      }
+
+      .slider-wrapper {
+        margin: 0 38px;
+      }
+
+      .slider-item {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+      }
+
+      .feature-card {
+        height: auto;
+        flex: 1;
+      }
+
+      .card-overlay {
+        padding: 12px 14px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .faculty-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .faculty-grid {
+        gap: 20px;
+      }
+
+      .test-card {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+
+      .sc-layout {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .sc-left-col {
+        width: 100%;
+        padding-top: 0;
+      }
+
+      .test-main-title {
+        font-size: 26px;
+      }
+
+      .case-studies-section .row>div {
+        margin-bottom: 24px;
+      }
+
+      .case-card {
+        flex-direction: column;
+        padding: 16px;
+        min-height: auto;
+        gap: 16px;
+      }
+
+      .case-card-img {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 0;
+        aspect-ratio: auto;
+      }
+
+      .case-body {
+        padding: 0;
+      }
+
+      .elig-tab-inner {
+        padding: 26px 18px;
+      }
+
+      .jii-section {
+        padding: 50px 20px 40px;
+      }
+
+      .about-prog-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .about-images-left-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .about-prog-images .img-campus {
+        height: 280px;
+      }
+
+      .about-prog-images .img-collage {
+        display: none;
+      }
+
+      .about-prog-cta-tile {
+        height: auto;
+        min-height: 110px;
+      }
+
+      .enquire-form-container {
+        border-radius: 20px;
+      }
+
+      .enquire-form-left,
+      .enquire-form-right {
+        padding: 28px 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .who-section .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .info-tile {
+        flex: 0 0 50%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    /* ================================================
+       RECOGNITIONS RESPONSIVE
+    ================================================ */
+    @media (max-width: 991px) {
+      .recognitions-badges {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .rec-badge {
+        flex: 0 0 45% !important;
+      }
+
+      .rec-badge-center {
+        flex: 0 0 100% !important;
+        order: -1;
+        margin-bottom: 20px;
+        max-width: 320px;
+      }
+
+      .recognitions-body {
+        min-height: auto;
+        padding: 60px 0;
+      }
+
+      .recognitions-title {
+        font-size: 32px !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .rec-badge,
+      .rec-badge-center {
+        flex: 0 0 85% !important;
+        max-width: 100% !important;
+      }
+
+      .recognitions-title {
+        font-size: 26px !important;
+      }
+    }
+
+    /* ================================================
+       FIGMA FIDELITY OVERRIDES
+    ================================================ */
+    /* --- Fix broken background image paths --- */
+    .recognitions-body {
+      background: url('Assets/Recognitions/bg picture.png') bottom center / cover no-repeat !important;
+    }
+
+    .bg-eligibility .elig-bg {
+      background-image: url('Assets/Eligibility/bg picture (39).png') !important;
+    }
+
+    .bg-fees .elig-bg {
+      background-image: url('Assets/Fee structure/bg picture (38).png') !important;
+    }
+
+    /* --- Skills You'll Acquire (icon + text grid) --- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 50px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .skill-item img {
+      width: 78px;
+      height: 78px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+
+    .skill-item h6 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+      line-height: 1.35;
+      text-align: left;
+    }
+
+    @media (max-width: 900px) {
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 28px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    /* --- Who Is This Programme For (dark band + cards) --- */
+    .who-band {
+      position: relative;
+      background: url('Assets/Who Is This Programme For/IMAGE/Rectangle 774 (1).png') center / cover no-repeat;
+      padding: 64px 0 72px;
+      overflow: hidden;
+    }
+
+    .who-band::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(74, 0, 160, 0.74) 0%, rgba(106, 13, 173, 0.6) 45%, rgba(13, 27, 115, 0.74) 100%);
+    }
+
+    .who-cards {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .who-card2 {
+      flex: 1 1 0;
+      min-width: 178px;
+      max-width: 225px;
+      background: linear-gradient(180deg, #F4F6FF 0%, #C9D1EF 100%);
+      border-radius: 22px;
+      padding: 28px 18px 24px;
+      text-align: center;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+      transition: transform 0.3s ease;
+    }
+
+    .who-card2:hover {
+      transform: translateY(-6px);
+    }
+
+    .who-card2 .who-ic {
+      width: 66px;
+      height: 66px;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #6a0dad 0%, #0d1b73 100%);
+      border-radius: 18px;
+    }
+
+    .who-card2 .who-ic img {
+      width: 34px;
+      height: 34px;
+      filter: brightness(0) invert(1);
+    }
+
+    .who-card2 h6 {
+      color: #0b1354;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .who-card2 p {
+      color: #33408f;
+      font-size: 12.5px;
+      line-height: 1.45;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* --- Need To Know More --- */
+    .ntk-img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+    }
+
+    .btn-brochure {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 55%, #00c2cb 100%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      padding: 14px 34px;
+      border-radius: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 8px 22px rgba(106, 13, 173, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .btn-brochure:hover {
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    /* --- Why Choose JGU (static card row) --- */
+    .why-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .why-card {
+      flex: 1 1 0;
+      min-width: 190px;
+      max-width: 235px;
+      background: linear-gradient(180deg, #ffffff 0%, #f3f0fb 100%);
+      border-radius: 20px;
+      padding: 26px 22px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+    }
+
+    .why-card img {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 18px;
+    }
+
+    .why-card h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0d1b73;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .why-card p {
+      font-size: 12.5px;
+      color: #444;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* --- Recognitions: bare badge images over campus bg --- */
+    .rec-badge {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      padding: 8px !important;
+    }
+
+    .rec-badge img {
+      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.35));
+    }
+
+    .rec-badge-center {
+      flex: 0 0 26% !important;
+      transform: scale(1.06);
+    }
+
+    /* --- FAQ circular toggle --- */
+    .faq-item .accordion-button::after {
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid #6a0dad;
+      border-radius: 50%;
+      background-size: 14px;
+      background-position: center;
+      flex-shrink: 0;
+    }
+  </style>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "1243343920376799");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
+    height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+  <header class="header-section section-global">
+    <div class="container">
+      <div class="logo-flex-container">
+        <img src="Assets/hero section/LOGOS/LOGOS.png" class="header-logo-img" alt="O.P. Jindal Global University" />
+        <div class="header-logo-divider d-none d-md-block"></div>
+        <img src="Assets/hero section/LOGOS/JGLS 1.png" class="header-logo-img me-3 me-sm-4" alt="Jindal Global Law School" />
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+     HERO SECTION
+══════════════════════════════════════════ -->
+  <section class="hero-section section-global">
+    <div class="container-fluid px-0">
+
+      <div class="hero-inner">
+
+        <!-- Centre: Student image (sits behind, head above the title) -->
+        <img src="Assets/hero section/strudent image.png" class="hero-student" alt="" aria-hidden="true" />
+
+        <!-- Left: Text -->
+        <div class="hero-text-col">
+          <p class="hero-ma">M.A. in</p>
+          <h1 class="hero-title"><span class="text-gradient-studies">Legislative Drafting</span></h1>
+          <div class="hero-divider"></div>
+          <p class="hero-tagline">UNDERSTAND LAWMAKING. DRAFT EFFECTIVE LEGISLATION. SHAPE PUBLIC POLICY.</p>
+          <p style="font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 1.6; color: #1a1a1a; margin-bottom: 32px; font-weight: 400; max-width: 78%;">
+            A specialised master's programme designed to help you understand legislative processes, develop expertise in statutory drafting, and translate policy ideas into clear and effective laws.
+          </p>
+          <button type="button" class="npfWidgetButton btn-cta npfWidget-163d3e432dd1cc62ee589e07272304d0">APPLY NOW</button>
+        </div>
+
+        <!-- Right: Enquire Form -->
+        <div class="hero-form-col">
+          <div class="enquire-hero-card">
+            <h3 class="enquire-hero-title">ENQUIRE HERE!</h3>
+            <div class="npf_wgts" data-height="420px" data-w="163d3e432dd1cc62ee589e07272304d0"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Info Bar -->
+      <div class="hero-info-bar">
+        <div class="info-tile">
+          <span class="info-tile-label">Postgraduate</span>
+          <span class="info-tile-value">Degree</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Duration:</span>
+          <span class="info-tile-value">1 Year</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Batch Starts:</span>
+          <span class="info-tile-value">September 2026</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Fully Online</span>
+          <span class="info-tile-value">Programme</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Programme Fee:</span>
+          <span class="info-tile-value">₹2,75,000</span>
+        </div>
+        <div class="info-tile">
+          <span class="info-tile-label">Easy EMI</span>
+          <span class="info-tile-value">Options</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     WHAT'S IN IT FOR YOU
+══════════════════════════════════════════ -->
+  <section class="whats-in-it-section section-global" style="background: #fff; padding: 60px 0;">
+    <div class="container text-center mb-5">
+      <h2 style="font-size: 42px; font-weight: 800; color: #1c2678;">What's in it for <span style="color: #2F80ED;">you?</span></h2>
+    </div>
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="benefit-card" style="position: relative; border-radius: 25px; overflow: hidden; height: 350px;">
+            <img src="Assets/What’s in It for You/IMG handson fieldwork.png" alt="Benefit 1" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(0deg, #0b1354 0%, rgba(11, 19, 84, 0) 100%); padding: 30px 20px; color: #fff;">
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 10px;">Specialised Legislative Expertise</h4>
+              <p style="font-size: 15px; margin: 0; opacity: 0.9;">Master principles of legislative drafting</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="benefit-card" style="position: relative; border-radius: 25px; overflow: hidden; height: 350px;">
+            <img src="Assets/What’s in It for You/IMG handson fieldwork-1.png" alt="Benefit 2" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(0deg, #0b1354 0%, rgba(11, 19, 84, 0) 100%); padding: 30px 20px; color: #fff;">
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 10px;">Interdisciplinary Perspective</h4>
+              <p style="font-size: 15px; margin: 0; opacity: 0.9;">Law, policy, and governance insights</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="benefit-card" style="position: relative; border-radius: 25px; overflow: hidden; height: 350px;">
+            <img src="Assets/What’s in It for You/IMG handson fieldwork-2.png" alt="Benefit 3" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(0deg, #0b1354 0%, rgba(11, 19, 84, 0) 100%); padding: 30px 20px; color: #fff;">
+              <h4 style="font-size: 22px; font-weight: 700; margin-bottom: 10px;">Precision Legal Writing</h4>
+              <p style="font-size: 15px; margin: 0; opacity: 0.9;">Clear and structured legislative language</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     PROGRAMME OVERVIEW
+══════════════════════════════════════════ -->
+  <section class="about-programme-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="about-prog-images">
+            <img class="img-collage" src="Assets/Programme Overview/Rectangle 127 (6).png" alt="JGU Campus" />
+            <div class="about-images-left-col">
+              <a href="#enquire" class="about-prog-cta-tile" style="height: auto; flex-direction: row; align-items: center; justify-content: space-between; padding: 16px 24px;">
+                <span class="cta-tile-text" style="font-size: 16px;">Learn More</span>
+                <span class="cta-tile-arrow" style="margin-top: 0; font-size: 20px;">&rarr;</span>
+              </a>
+              <img class="img-campus" src="Assets/Programme Overview/Rectangle 129 (5).png" alt="Scales of justice and gavel" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <h2 class="about-prog-title">Programme Overview</h2>
+          <p class="about-prog-body">The M.A. in Legislative Drafting explores the connection between lawmaking, governance, and public policy. Through an interdisciplinary approach, the programme examines how legislation structures institutions, defines rights and obligations, and shapes social and economic systems.</p>
+          <p class="about-prog-body">It also helps learners understand how legislative frameworks guide governance, the role of ministries and legislatures in drafting laws, and the challenges created by complex legal language&mdash;highlighting the importance of clear, accessible, and well-structured legislation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     SKILLS YOU'LL ACQUIRE
+══════════════════════════════════════════ -->
+  <section class="skills-section section-global" style="background-color: #F6F2FC; padding: 90px 0 80px;">
+    <div class="container text-center mb-5">
+      <h2 style="color: #1c2678; font-weight: 800; font-size: clamp(30px, 4vw, 46px); margin-bottom: 50px;">Skills You'll Acquire</h2>
+    </div>
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2333.png" alt=""><h6>Legislative Drafting Principles</h6></div>
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2334.png" alt=""><h6>Rights and Obligations Frameworks</h6></div>
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2339.png" alt=""><h6>Regulatory Bodies and Authorities</h6></div>
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2340.png" alt=""><h6>Constitutional Democracy &amp; Governance</h6></div>
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2344.png" alt=""><h6>Legislative Institutions &amp; Processes</h6></div>
+        <div class="skill-item"><img src="Assets/Skills You’ll Acquire/Group 2346.png" alt=""><h6>Statutory Interpretation Methods</h6></div>
+      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#1c2678; margin:0 5px;"></span>
+        <span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#C4CAEA; margin:0 5px;"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     WHO IS THIS PROGRAMME FOR
+══════════════════════════════════════════ -->
+  <section class="who-section section-global" style="background: linear-gradient(93deg, #fff 3%, #fffcde 100%); padding: 70px 0 0;">
+    <div class="container text-center" style="margin-bottom: 36px;">
+      <h2 class="who-title" style="margin-bottom: 0;">Who Is This Programme For?</h2>
+    </div>
+    <div class="who-band">
+      <div class="container">
+        <div class="who-cards">
+          <div class="who-card2">
+            <div class="who-ic"><img src="Assets/Who Is This Programme For/ICONS/Layer_1.svg" alt=""></div>
+            <h6>Law Graduates</h6>
+            <p>interested in legislative drafting and public law</p>
+          </div>
+          <div class="who-card2">
+            <div class="who-ic"><img src="Assets/Who Is This Programme For/ICONS/Layer_1-1.svg" alt=""></div>
+            <h6>Policy &amp; Governance Professionals</h6>
+            <p>working in government or regulatory sectors</p>
+          </div>
+          <div class="who-card2">
+            <div class="who-ic"><img src="Assets/Who Is This Programme For/ICONS/Layer_1-2.svg" alt=""></div>
+            <h6>Government &amp; Legislative Officials</h6>
+            <p>involved in lawmaking processes</p>
+          </div>
+          <div class="who-card2">
+            <div class="who-ic"><img src="Assets/Who Is This Programme For/ICONS/Frame.svg" alt=""></div>
+            <h6>Social Science Graduates</h6>
+            <p>interested in law, policy, and governance</p>
+          </div>
+          <div class="who-card2">
+            <div class="who-ic"><img src="Assets/Who Is This Programme For/ICONS/Glyph.svg" alt=""></div>
+            <h6>Researchers &amp; Academics</h6>
+            <p>studying legislative and policy frameworks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     NEED TO KNOW MORE
+══════════════════════════════════════════ -->
+  <section class="ntk-section section-global" style="background: linear-gradient(93deg, #fff 3%, #fffcde 100%); padding: 70px 0;">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 style="font-size: clamp(30px, 4vw, 46px); font-weight: 800; color: #0d1b73; margin-bottom: 20px;">Need to know more?</h2>
+          <p style="font-size: 16px; color: #4b5563; line-height: 1.8; margin-bottom: 12px; font-weight: 500;">Explore the M.A. in Legislative Drafting in detail by downloading the programme brochure.</p>
+          <p style="font-size: 16px; color: #4b5563; line-height: 1.8; margin-bottom: 28px; font-weight: 500;">View the programme structure, Courses, Faculty Details, Credits and Learning outcomes.</p>
+          <a href="#enquire" class="btn-brochure">Download Brochure</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="ntk-img" src="Assets/Need to know more/img brochure (15).png" alt="Programme brochure preview">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FEES STRUCTURE / ELIGIBILITY TABS
+══════════════════════════════════════════ -->
+  <section class="eligibility-section bg-fees" id="eligibility">
+    <div class="elig-bg"></div>
+    <div class="elig-overlay"></div>
+
+    <!-- Tabs -->
+    <ul class="nav elig-tabs justify-content-center mb-4" id="eligTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-fees" type="button">Fees Structure</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-elig" type="button">Eligibility</button>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="tab-content">
+
+        <!-- Tab 1: Fees Structure -->
+        <div class="tab-pane fade show active" id="tab-fees" role="tabpanel">
+          <div class="elig-tab-inner">
+            <table class="fee-table">
+              <thead>
+                <tr>
+                  <th>Fee Category</th>
+                  <th>Amount</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Registration Amount</td>
+                  <td>INR 25,000</td>
+                  <td>Upon acceptance of the offer letter</td>
+                </tr>
+                <tr>
+                  <td>1st Installment</td>
+                  <td>INR 1,25,000</td>
+                  <td>Within 30 days from the programme commencement date</td>
+                </tr>
+                <tr>
+                  <td>2nd Installment</td>
+                  <td>INR 1,25,000</td>
+                  <td>Prior to the commencement of Term 3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Eligibility -->
+        <div class="tab-pane fade" id="tab-elig" role="tabpanel">
+          <div class="elig-tab-inner">
+            <div class="elig-section-title" style="color: #FFD700; font-size: 24px; font-weight: 700; margin-bottom: 20px;">Eligibility:</div>
+            <ul class="elig-list">
+              <li>Undergraduate degree with at least 50% marks</li>
+              <li>Candidates with less than 50% marks must appear for the JSAT examination and attend a mandatory interview</li>
+            </ul>
+            <div class="elig-section-title sec-2" style="color: #FFD700; font-size: 24px; font-weight: 700; margin-top: 30px; margin-bottom: 20px;">Selection Criteria:</div>
+            <p style="color: #fff; font-size: 16px; line-height: 1.6;">Admission decisions are based on a comprehensive review of the applicant's profile, including academic performance, Statement of Purpose (SOP), and academic transcripts.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     CAREER PATHWAYS
+══════════════════════════════════════════ -->
+  <section class="career-pathways-section section-global" style="background: url('Assets/Career pathways/image/bg image (12).png') center center / cover no-repeat; padding: 100px 0;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Col -->
+        <div class="col-lg-4 mb-5 mb-lg-0 text-white">
+          <h2 style="font-size: 54px; font-weight: 800; margin-bottom: 30px; line-height: 1.2;">Career<br>Pathways</h2>
+          <p style="font-size: 18px; line-height: 1.6; max-width: 90%;">Graduates gain the expertise to contribute effectively to legislative and policy development within governance and regulatory systems.</p>
+        </div>
+
+        <!-- Right Col (Cards) -->
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap justify-content-center" style="gap: 20px;">
+
+            <!-- Card 1 -->
+            <div class="pathway-card" style="background: #fff; padding: 25px; border-radius: 20px; width: 220px; flex-shrink: 0;">
+              <img src="Assets/Career pathways/icons/Layer_1.svg" alt="Icon" style="width: 50px; height: 50px; margin-bottom: 20px;">
+              <h5 style="color: #4A00E0; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Draft Primary Legislation</h5>
+              <p style="color: #333; font-size: 14px; line-height: 1.4; margin: 0;">Prepare Bills and Acts with clear structure, legal precision, and enforceable provisions.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="pathway-card" style="background: #fff; padding: 25px; border-radius: 20px; width: 220px; flex-shrink: 0;">
+              <img src="Assets/Career pathways/icons/Layer_25.svg" alt="Icon" style="width: 50px; height: 50px; margin-bottom: 20px;">
+              <h5 style="color: #4A00E0; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Ensure Constitutional Compliance</h5>
+              <p style="color: #333; font-size: 14px; line-height: 1.4; margin: 0;">Assess legislative competence, fundamental rights compatibility, and federal balance while drafting laws.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="pathway-card" style="background: #fff; padding: 25px; border-radius: 20px; width: 220px; flex-shrink: 0;">
+              <img src="Assets/Career pathways/icons/Capa_1.svg" alt="Icon" style="width: 50px; height: 50px; margin-bottom: 20px;">
+              <h5 style="color: #4A00E0; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Apply Statutory Interpretation</h5>
+              <p style="color: #333; font-size: 14px; line-height: 1.4; margin: 0;">Design legislation that reduces ambiguity and minimises potential litigation.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="pathway-card" style="background: #fff; padding: 25px; border-radius: 20px; width: 220px; flex-shrink: 0;">
+              <img src="Assets/Career pathways/icons/_x32_8_Auction_1_.svg" alt="Icon" style="width: 50px; height: 50px; margin-bottom: 20px;">
+              <h5 style="color: #4A00E0; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Produce Citizen-Centric Legislation</h5>
+              <p style="color: #333; font-size: 14px; line-height: 1.4; margin: 0;">Develop plain-language legal text that improves accessibility without compromising legal accuracy.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="pathway-card" style="background: #fff; padding: 25px; border-radius: 20px; width: 220px; flex-shrink: 0;">
+              <img src="Assets/Career pathways/icons/Frame.svg" alt="Icon" style="width: 50px; height: 50px; margin-bottom: 20px;">
+              <h5 style="color: #4A00E0; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Draft Subordinate Legislation</h5>
+              <p style="color: #333; font-size: 14px; line-height: 1.4; margin: 0;">Prepare rules, regulations, and delegated instruments within established statutory authority.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     WHY CHOOSE JGU ONLINE
+══════════════════════════════════════════ -->
+  <section class="features-section section-global" style="background: url('Assets/Why Choose JGU Online/IMAGE/bg picture (37).png') center center / cover no-repeat; padding: 90px 0;">
+    <div class="container text-center mb-5" style="position: relative; z-index: 1;">
+      <h2 style="color: #fff; font-weight: 800; font-size: clamp(30px, 4vw, 48px); margin-bottom: 16px; text-shadow: 0 2px 16px rgba(0,0,0,0.45);">Why Choose JGU Online?</h2>
+      <p style="color: #f1f1f1; font-size: 17px; max-width: 820px; margin: 0 auto; text-shadow: 0 1px 8px rgba(0,0,0,0.4);">JGU Online combines global recognition, academic excellence, and cutting-edge digital learning to deliver a world-class online education experience.</p>
+    </div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="why-row">
+        <div class="why-card">
+          <img src="Assets/Why Choose JGU Online/ICONS/Vector.svg" alt="">
+          <h4>#1 Globally for Online Learning (2024)</h4>
+          <p>Ranked No.1 in the world in the Times Higher Education (THE) Online Learning Rankings 2024.</p>
+        </div>
+        <div class="why-card">
+          <img src="Assets/Why Choose JGU Online/ICONS/Layer_1.svg" alt="">
+          <h4>QS 5-Star Excellence (2025)</h4>
+          <p>Awarded the prestigious QS 5-Star Rating for Online Learning, Teaching, Employability, and Global Engagement.</p>
+        </div>
+        <div class="why-card">
+          <img src="Assets/Why Choose JGU Online/ICONS/Layer_1-1.svg" alt="">
+          <h4>Digital Innovation of the Year (2021)</h4>
+          <p>Winner of the THE Asia Awards 2021 for developing &ldquo;Tou,&rdquo; a cloud-based platform supporting digital education systems.</p>
+        </div>
+        <div class="why-card">
+          <img src="Assets/Why Choose JGU Online/ICONS/Vector-1.svg" alt="">
+          <h4>E-LEAD Certification for Academic Digitisation</h4>
+          <p>Recognised with the QS I-GAUGE E-LEAD Certification for excellence in online academic delivery and digital transformation.</p>
+        </div>
+        <div class="why-card">
+          <img src="Assets/Why Choose JGU Online/ICONS/Capa_1.svg" alt="">
+          <h4>Growing Global Learner Community</h4>
+          <p>Since launching online programmes in 2020, JGU Online has built a thriving community of 5,000+ learners worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     RECOGNITIONS
+══════════════════════════════════════════ -->
+  <section class="recognitions-section section-global">
+    <div class="recognitions-header">
+      <h2 class="recognitions-title text-center">Recognitions and Accreditations</h2>
+    </div>
+    <div class="recognitions-body">
+      <div class="recognitions-overlay"></div>
+      <div class="recognitions-inner">
+        <div class="recognitions-badges">
+          <div class="rec-badge"><img src="Assets/Recognitions/2.png" alt="Top 150 Under 50 Globally – QS Young University Rankings 2022"></div>
+          <div class="rec-badge rec-badge-large"><img src="Assets/Recognitions/1.png" alt="Institution of Eminence – Ministry of Education, Government of India"></div>
+          <div class="rec-badge rec-badge-center"><img src="Assets/Recognitions/3.png" alt="JGU Makes History in Global Rankings – India's No.1 Ranked University"></div>
+          <div class="rec-badge rec-badge-large"><img src="Assets/Recognitions/4.png" alt="Ranked No.1 Private University in India – QS World University Rankings"></div>
+          <div class="rec-badge"><img src="Assets/Recognitions/5.png" alt="Ranked No.1 Globally for Online Learning – THE 2024"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════ -->
+  <section class="faq-section section-global py-5" id="faq">
+    <div class="container">
+      <h2 class="faq-main-title text-center mb-5">Frequently Asked Questions <span class="text-gradient">(FAQs)</span>
+      </h2>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="accordion" id="faqLeft">
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1" aria-expanded="true">
+                  Is this degree valid and recognised?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqLeft">
+                <div class="accordion-body">Yes. It is a formally awarded Master's degree from O.P. Jindal Global
+                  University.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  Who is this programme for? Do I need a law background?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">The programme welcomes law graduates as well as policy, governance, social
+                  science, and government professionals. A law background is helpful but not mandatory.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="accordion" id="faqRight">
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  Will there be practical drafting exposure?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">Yes. The programme includes practical drafting exercises and case-based
+                  assignments, giving you hands-on experience in preparing Bills, rules, and subordinate legislation.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-item">
+              <h2 class="accordion-header m-0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  Whom should I contact for programme details?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">You can reach our admissions team by submitting the Enquire Now form on this
+                  page, and our programme advisors will get in touch with you.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     ENQUIRE NOW
+══════════════════════════════════════════ -->
+  <section class="enquire-section section-global py-5" id="enquire">
+    <div class="container">
+      <h2 class="enquire-section-title text-gradient text-center">Enquire Now!</h2>
+      <div class="enquire-form-container mx-auto">
+        <div class="row align-items-stretch g-0">
+
+          <!-- Form -->
+          <div class="col-lg-6 col-md-12 enquire-form-left">
+            <div class="npf_wgts" data-height="400px" data-w="163d3e432dd1cc62ee589e07272304d0"></div>
+          </div>
+
+          <!-- Info -->
+          <div class="col-lg-6 col-md-12 enquire-form-right d-flex flex-column justify-content-center">
+            <h2 class="enquire-info-title">Let's connect and shape your path at JGU!</h2>
+            <p class="enquire-info-sub">Reach out to know more about programmes, admissions, and opportunities.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+  <footer class="py-4">
+    <p class="text-center fw-bold mb-0">&copy; 2026 O.P. Jindal Global University. All Rights Reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      /* ── PROGRAMME HIGHLIGHTS SLIDER ── */
+      const track = $('.slider-track');
+      const items = $('.slider-item');
+      let current = 0;
+
+      function getVisible() {
+        if (window.innerWidth < 576) return 1;
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
+      }
+
+      function updateSlider() {
+        const visibleCount = getVisible();
+        const wrapperWidth = $('.slider-wrapper').width();
+        const itemWidth = wrapperWidth / visibleCount;
+        items.css({ 'min-width': itemWidth + 'px', 'max-width': itemWidth + 'px', 'width': itemWidth + 'px' });
+        track.css('transform', 'translateX(-' + (current * itemWidth) + 'px)');
+      }
+
+      $('.right-btn').on('click', function () {
+        const visibleCount = getVisible();
+        if (current < items.length - visibleCount) { current++; updateSlider(); }
+      });
+
+      $('.left-btn').on('click', function () {
+        if (current > 0) { current--; updateSlider(); }
+      });
+
+      $(window).on('resize', function () { current = 0; updateSlider(); updateFaculty(); updateTest(); updateRecognitions(); });
+      updateSlider();
+
+      /* ── RECOGNITIONS CAROUSEL FOR MOBILE ── */
+      const $reconBadge = $('.recognitions-badges');
+      function updateRecognitions() {
+        if (window.innerWidth <= 768) {
+          if (!$reconBadge.hasClass('owl-carousel')) {
+            $reconBadge.addClass('owl-carousel owl-theme').owlCarousel({
+              items: 1,
+              margin: 20,
+              loop: true,
+              nav: false,
+              dots: true,
+              autoplay: true,
+              autoplayTimeout: 3500
+            });
+          }
+        } else {
+          if ($reconBadge.hasClass('owl-carousel')) {
+            $reconBadge.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-theme');
+          }
+        }
+      }
+      updateRecognitions();
+
+      /* ── FACULTY CAROUSEL ── */
+      const facultyGrid = document.querySelector('.faculty-grid');
+      const facultyCards = document.querySelectorAll('.faculty-card');
+      const prevBtn = document.querySelector('.faculty-prev-btn');
+      const nextBtn = document.querySelector('.faculty-next-btn');
+      let fIdx = 0;
+
+      function updateFaculty() {
+        if (!facultyGrid || !facultyCards.length) return;
+        const gap = parseFloat(window.getComputedStyle(facultyGrid).gap) || 0;
+        const w = facultyCards[0].offsetWidth + gap;
+        facultyGrid.style.transform = 'translateX(-' + (fIdx * w) + 'px)';
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => { if (fIdx > 0) { fIdx--; updateFaculty(); } });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          if (!facultyGrid) return;
+          const gap = parseFloat(window.getComputedStyle(facultyGrid).gap) || 0;
+          const w = facultyCards[0].offsetWidth + gap;
+          const visible = Math.floor(facultyGrid.parentElement.offsetWidth / w) || 1;
+          const maxIdx = Math.max(0, facultyCards.length - visible);
+          if (fIdx < maxIdx) { fIdx++; updateFaculty(); }
+        });
+      }
+      updateFaculty();
+
+      /* ── TESTIMONIALS SLIDER ── */
+      const testGrid = document.querySelector('.test-grid');
+      const testCards = document.querySelectorAll('.test-card');
+      let tIdx = 0;
+
+      function updateTest() {
+        if (!testGrid || !testCards.length) return;
+        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 0;
+        const w = testCards[0].offsetWidth + gap;
+        testGrid.style.transform = 'translateX(-' + (tIdx * w) + 'px)';
+      }
+
+      document.getElementById('testPrev')?.addEventListener('click', () => {
+        if (tIdx > 0) { tIdx--; updateTest(); }
+      });
+
+      document.getElementById('testNext')?.addEventListener('click', () => {
+        if (!testGrid) return;
+        const gap = parseFloat(window.getComputedStyle(testGrid).gap) || 0;
+        const w = testCards[0].offsetWidth + gap;
+        const sliderWrap = document.querySelector('.sc-slider-wrap');
+        const visible = Math.floor((sliderWrap ? sliderWrap.offsetWidth : testGrid.parentElement.offsetWidth) / w) || 1;
+        const maxIdx = Math.max(0, testCards.length - visible);
+        if (tIdx < maxIdx) { tIdx++; updateTest(); }
+      });
+
+      updateTest();
+
+      /* ── VIDEO BOX ── */
+      const videoBox = document.querySelector('.video-box[data-youtube]');
+      if (videoBox) {
+        videoBox.addEventListener('click', function () {
+          const url = this.getAttribute('data-youtube');
+          if (url && url.indexOf('REPLACE_VIDEO_ID') === -1) {
+            window.open(url, '_blank');
+          }
+        });
+      }
+
+      /* ── DYNAMIC BACKGROUND SWAP FOR ELIGIBILITY SECTION ── */
+      $('#eligTabs button').on('shown.bs.tab', function (e) {
+        const targetId = $(e.target).attr('data-bs-target');
+        const $sec = $('.eligibility-section');
+        $sec.removeClass('bg-eligibility bg-fees bg-payment');
+        if (targetId === '#tab-elig') {
+          $sec.addClass('bg-eligibility');
+        } else if (targetId === '#tab-fees') {
+          $sec.addClass('bg-fees');
+        } else if (targetId === '#tab-payment') {
+          $sec.addClass('bg-payment');
+        }
+      });
+
+    });
+  </script>
+
+  <!-- NoPaperForms -->
+  <script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+
+  <script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script><script>let npfW163d3e432dd1cc62ee589e07272304d0 = new NpfWidgetsInit(        {'widgetId':'163d3e432dd1cc62ee589e07272304d0',    'baseurl':'widgets.in8.nopaperforms.com',    'formTitle':'Enquiry Form',    'titleColor':'#FF0033',    'backgroundColor':'#ddd',    'iframeHeight':'500px',     'buttonbgColor':'#4c79dc',     'buttonTextColor':'#FFF',    });</script>
+
+</body>
+
+</html>
