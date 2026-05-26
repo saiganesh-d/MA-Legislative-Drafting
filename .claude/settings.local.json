@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1440,560 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_eligtest_cur.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_eligtest.html\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1440,560 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_elig_fees.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_eligtest.html\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1440,620 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_elig_elig.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_eligtest.html#elig\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1440,620 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_elig_elig2.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_eligtest.html#elig\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1280,680 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_cp_small.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_cptest.html\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1366,820 --screenshot=\"C:\\\\Users\\\\saiga\\\\Desktop\\\\clients\\\\M.A-Legislative-Drafting\\\\_rec.png\" \"file:///C:/Users/saiga/Desktop/clients/M.A-Legislative-Drafting/_rectest.html\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
