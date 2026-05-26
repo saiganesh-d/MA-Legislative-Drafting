@@ -844,18 +844,26 @@
       position: relative;
       z-index: 2;
       width: 100%;
-      padding: 0 40px;
+      /* Was: padding: 0 40px — removed so the badge row can reach the viewport
+         edges (and bleed past, see margin trick below). */
+      padding: 0;
     }
 
     .recognitions-badges {
       display: flex;
       flex-wrap: nowrap;
+      /* Was space-between which inflated the gaps; flex-start + a fixed gap
+         keeps the spacing tight and consistent like the Figma. */
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
-      width: 100%;
-      max-width: 1700px;
-      margin: 0 auto;
+      gap: 14px;
+      /* Break out of the parent .recognitions-inner / section padding so
+         the first/last badges sit closer to the viewport edges. Shifted
+         slightly left (larger negative left margin than right) so the
+         bleed reads symmetrically — the right was visibly heavier before. */
+      width: calc(100% + 32px);
+      max-width: none;
+      margin: 0 -4px 0 -28px;
     }
 
     .recognitions-body {
@@ -881,7 +889,9 @@
     }
 
     .rec-badge {
-      flex: 0 0 18%;
+      /* 18% felt too cramped, 20% felt too big — 18.5% with the tighter
+         gap + small row bleed gives the spread without inflating size. */
+      flex: 0 0 18.5%;
       aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
@@ -900,23 +910,25 @@
     }
 
     .rec-badge-large {
-      flex: 0 0 18%;
+      flex: 0 0 18.5%;
     }
 
     .rec-badge-center {
-      flex: 0 0 22%;
+      /* Center stat-card kept slightly wider + lightly scaled so it still
+         reads as the focal piece, but without overpowering the row. */
+      flex: 0 0 20%;
       padding: 6px;
-      transform: scale(1.1);
+      transform: scale(1.05);
       margin: 0;
       z-index: 10;
     }
 
     .rec-badge-center~.rec-badge-large {
-      flex: 0 0 18%;
+      flex: 0 0 18.5%;
     }
 
     .rec-badge-center~.rec-badge {
-      flex: 0 0 18%;
+      flex: 0 0 18.5%;
     }
 
     /* When inside mobile carousel */
@@ -2063,13 +2075,28 @@
 
     .wiifu-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: clamp(28px, 3vw, 42px);
-      font-weight: 800;
-      color: #1c2678;
+      /* Figma: Montserrat Bold 72 / line-height 80 — scaled for responsive. */
+      font-size: clamp(32px, 5.2vw, 64px);
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: -0.5px;
+      /* Brand 3-stop gradient sweeping across the whole phrase
+         (navy → purple → cyan) — applied to the heading itself so the
+         single gradient spans both "What's in it for" and "you?". */
+      background: linear-gradient(90deg, #0d1b73 0%, #6a0dad 50%, #00c2cb 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
 
     .wiifu-title span {
-      color: #2F80ED;
+      /* "you?" inherits the parent gradient — no separate fill needed. */
+      background: inherit;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
 
     .wiifu-carousel {
@@ -2101,6 +2128,11 @@
          its own corners + navy gradient baked in. Matching the aspect avoids
          cover-cropping and the corner mismatch that made the borders look off. */
       aspect-ratio: 840 / 1053;
+      /* Narrower than the slider slot so the boxes don't run edge-to-edge —
+         centered inside the wiifu-item, with the leftover space becoming
+         breathing room between cards. */
+      max-width: 82%;
+      margin: 0 auto;
     }
 
     .benefit-card img {
@@ -2121,15 +2153,21 @@
       /* No background — the navy gradient is already baked into the image. */
       padding: 22px 26px 26px;
       color: #fff;
+      /* Figma has the card heading + subtitle flush-left in the gradient
+         band; make that explicit so nothing inherits center alignment. */
+      text-align: left;
       text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
     }
 
     .benefit-overlay h4 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 20px;
+      /* Bumped to better match the Figma weight + presence on the gradient
+         (Figma reads as ~24px bold, breaking to two lines per card). */
+      font-size: clamp(18px, 1.5vw, 22px);
       font-weight: 700;
       margin-bottom: 8px;
-      line-height: 1.25;
+      line-height: 1.22;
+      letter-spacing: -0.2px;
     }
 
     .benefit-overlay p {
@@ -2418,6 +2456,11 @@
       .recognitions-badges {
         flex-wrap: wrap;
         gap: 15px;
+        /* Reset desktop bleed (calc(100% + 32px) + negative margin) so the
+           tablet 2-column grid sits cleanly inside the section, no h-scroll. */
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
       }
 
       .rec-badge {
@@ -2429,6 +2472,14 @@
         order: -1;
         margin-bottom: 20px;
         max-width: 320px;
+        /* Cancel desktop scale(1.05) — at 100% width it would overflow. */
+        transform: none !important;
+      }
+
+      .recognitions-inner {
+        /* Add horizontal padding so wrapped badges aren't flush with the
+           viewport edges on tablet. */
+        padding: 0 20px;
       }
 
       .recognitions-body {
@@ -2438,7 +2489,39 @@
 
       .recognitions-title {
         font-size: 32px !important;
+        margin-bottom: 36px !important;
       }
+    }
+
+    /* Mobile carousel mode (JS swaps .recognitions-badges into an Owl
+       carousel at ≤768px). Reset our desktop bleed/margins so Owl can lay
+       out cleanly, and cap badge size so a single slide doesn't dominate
+       the viewport. */
+    .recognitions-badges.owl-carousel {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 10px;
+      display: block !important;
+    }
+
+    .recognitions-badges.owl-carousel .owl-stage-outer {
+      padding: 6px 0;
+    }
+
+    .recognitions-badges.owl-carousel .owl-dots {
+      margin-top: 18px;
+    }
+
+    .recognitions-badges.owl-carousel .owl-dots .owl-dot span {
+      background: rgba(13, 27, 115, 0.35);
+      width: 9px;
+      height: 9px;
+    }
+
+    .recognitions-badges.owl-carousel .owl-dots .owl-dot.active span,
+    .recognitions-badges.owl-carousel .owl-dots .owl-dot:hover span {
+      background: #6a0dad;
     }
 
     @media (max-width: 576px) {
@@ -2451,6 +2534,19 @@
 
       .recognitions-title {
         font-size: 26px !important;
+        margin-bottom: 28px !important;
+      }
+
+      .recognitions-body {
+        padding: 44px 0 36px;
+      }
+
+      /* Tighten the owl badge so it doesn't take ~90% of a phone screen. */
+      .owl-carousel .rec-badge,
+      .owl-carousel .rec-badge-large,
+      .owl-carousel .rec-badge-center {
+        max-width: 260px !important;
+        padding: 14px !important;
       }
     }
 
